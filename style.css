@@ -1,0 +1,84 @@
+/* Reset simples */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container geral */
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+/* Barra de navegação */
+.header {
+    background-color: pink;
+    color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Área principal */
+.main-content {
+    display: flex;
+    flex: 1;
+    background: pink;
+}
+
+/* Menu lateral */
+.sidebar{
+    background-color: pink;
+    color: black;
+    flex: 1;
+    padding: 20px;
+    min-width: 200px;
+}
+
+/* Conteudo principal */
+.content{
+    background-color: white;
+    flex: 3;
+    padding: 20px;
+}
+
+/* Rodapé */
+.footer{
+    background:pink;
+    color: black;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Responsividade simples */
+@media (max-width: 768px) {
+    .main-content{
+        flex-direction: column;
+    }
+
+    .sidebar{
+        min-width: auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
